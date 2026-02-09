@@ -1,1 +1,1 @@
-# practice1
+# my first GitHub practice project
