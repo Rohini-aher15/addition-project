@@ -1,1 +1,1 @@
-# my first practice project
+# My first practice project
