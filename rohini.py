@@ -2,12 +2,12 @@ import random
 
 while True:
     num1 = random.randint(1, 9)
-    num2 = ranpdom.randint(1, 9)
+    num2 = random.randint(1, 9)
     
-    correct_answer = num1 + num2("\n")
+    correct_answer = num1 + num2
 
-    print("  {num1}")
-    print("+ {num2}")
+    print(f"  {num1}")
+    print(f"+ {num2}")
     print("----")
 
 
