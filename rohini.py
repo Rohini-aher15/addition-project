@@ -1,40 +1,25 @@
 import random
 
-def generate_question():
+while True:
+    num1 = random.randint(1, 9)
+    num2 = ranpdom.randint(1, 9)
     
-    a = random.randint(1, 9)
-    b= random.randint(1, 9)
-    return a, b
+    correct_answer = num1 + num2rint("\n")
 
-def ask_question():
-    a, b = generate_question()
-    correct_answer = a + b
+    print("  {num1}")
+    print("+ {num2}")
+    print("----")
+
 
     while True:
-        
-        print("  {a}")
-        print("+ {b}")
-        print("----")
-
         try:
-            student_answer = int(input("Your answer: "))
-        except ValueError:
-            print("Please enter a valid number.")
-            continue
-
-        if student_answer == correct_answer:
-            print("Very good! ")
-            break
-        else:
-            print("Hey! Try again ")
+            answer = int(input("Your answer: "))
+            
+            if answer == correct_answer:
+                print("Very good!\n")
+                break   
+            else:
+                print("Hey! Try again.\n")
         
-def main():
-    print("Welcome to Addition Practice!")
-    print("Solve the problems. Press Ctrl+C to exit.\n")
-
-    while True:
-        ask_question()
-
-if __name__ == "__main__":
-
-    main()
+        except ValueError:
+            print("Please enter a valid number.\n")
