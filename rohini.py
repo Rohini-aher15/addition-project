@@ -4,7 +4,7 @@ while True:
     num1 = random.randint(1, 9)
     num2 = ranpdom.randint(1, 9)
     
-    correct_answer = num1 + num2rint("\n")
+    correct_answer = num1 + num2("\n")
 
     print("  {num1}")
     print("+ {num2}")
