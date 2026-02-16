@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import tkinter as tk
 import random
 
@@ -94,5 +94,5 @@ result_label.pack()
 
 new_question()
 
->>>>>>> 58f79d7f693596afad3886b9d47844259d98c6c7
+
 win.mainloop()
