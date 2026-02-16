@@ -45,8 +45,6 @@ result_label = tk.Label(win, text="", font=("bold", 30))
 result_label.pack()
 
 new_question()
-
-=======
 import tkinter as tk
 import random
 
