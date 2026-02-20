@@ -4,9 +4,8 @@ import random
 score = 0
 time_left = 30
 correct_answer = 0
-time_up = True   # initially game not started
+time_up = True   
 
-# Function to generate question
 def new_question():
     global correct_answer
 
@@ -27,9 +26,7 @@ def new_question():
     question_label.config(text=f"{num1} {operator} {num2} = ?")
     answer_entry.delete(0, tk.END)
     result_label.config(text="")
-
-
-# Check answer
+    
 def check_answer():
     global score
 
@@ -51,8 +48,6 @@ def check_answer():
     except:
         result_label.config(text="Enter number!", fg="red")
 
-
-# Timer
 def countdown():
     global time_left, time_up
 
@@ -66,8 +61,6 @@ def countdown():
             answer_entry.config(state="disabled")
             time_up = True
 
-
-# Start game
 def start_game():
     global time_up
 
@@ -79,8 +72,6 @@ def start_game():
     new_question()
     countdown()
 
-
-# Restart game
 def restart_game():
     global score, time_left, time_up
 
@@ -95,9 +86,7 @@ def restart_game():
 
     new_question()
     countdown()
-
-
-# GUI setup
+    
 root = tk.Tk()
 root.title("Math Practice")
 
@@ -124,5 +113,6 @@ start_button.pack(pady=5)
 
 restart_button = tk.Button(root, text="Restart", font=("bold", 14), bg="orange", fg="white", command=restart_game)
 restart_button.pack(pady=5)
+
 
 root.mainloop()
